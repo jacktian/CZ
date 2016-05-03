@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/my_zone_cellbg2x"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/phototimeyear"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin13"
+        android:layout_marginTop="@dimen/margin12"
+        android:gravity="center_horizontal"
+        android:text="2014年" />
+
+    <ImageView
+        android:id="@+id/itemimg"
+        android:layout_width="180dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin14"
+        android:fadingEdge="none" />
+
+    <TextView
+        android:id="@+id/phototimeday"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phototimeyear"
+        android:layout_below="@+id/phototimeyear"
+        android:layout_marginTop="@dimen/margin15"
+        android:gravity="center_horizontal"
+        android:text="5月13日" />
+
+</RelativeLayout>

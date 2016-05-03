@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/gardenguidecell_bg"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="240dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:text="@string/cancel" />
+
+</LinearLayout>

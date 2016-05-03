@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg2x" >
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/more_icon_xxg2x" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/versiontxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="168dp"
+        android:background="@color/trans"
+        android:text="@string/version"
+        android:textColor="@color/white" >
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/scr1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="200dp" >
+
+        <TextView
+            android:id="@+id/companytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="        江苏甲子网络科技有限公司成立于2008年，获江苏省发展和改革委员会的批准，在常州市武进太湖湾度假区内规划建设江苏数字文化产业振兴基地，项目一期将重点建设其中的“一园”即环球数字嬉戏谷动漫游戏文化主题公园；“一网”CCJOY中国数字线上互动娱乐门户网， 真正达成了线上线下一体的娱乐形式。\r\n        公司作为中国互动娱乐领域的生力军，始终致力互联网和线下资源“虚实互动”娱乐新体验，同时努力促进数字文化生活，通过互联网为用户提供多元化的娱乐服务，为大众创造更愉悦的线上线下互动体验。\r\n        公司旗下共有4个研发团队共120余人；拥有成功研发经验；以“嬉戏”为主题切入点，自主研发端游产品《中华龙塔》《密传2》；页游产品《嬉戏幻想》《嬉戏飞车》《上古传奇》等；手机游戏《嬉游记》将于2013年强势推出，产品成功销往港、澳、台、东南亚等地，现均已上线运营。"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/about" >
+        </TextView>
+    </ScrollView>
+
+    <include layout="@layout/top_bar" />
+
+    <include layout="@layout/bottom_bar" />
+
+    <RelativeLayout
+        android:id="@+id/level2"
+        android:layout_width="240dip"
+        android:layout_height="155dip"
+        android:layout_gravity="bottom|center" >
+
+        <ImageButton
+            android:id="@+id/c1"
+            android:layout_width="80dip"
+            android:layout_height="88dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dip"
+            android:background="@drawable/zx_select" />
+
+        <ImageButton
+            android:id="@+id/c2"
+            android:layout_width="88dip"
+            android:layout_height="86dip"
+            android:layout_marginLeft="19dip"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/gl_select" />
+
+        <ImageButton
+            android:id="@+id/c3"
+            android:layout_width="94dip"
+            android:layout_height="98dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/hy_select" />
+
+        <ImageButton
+            android:id="@+id/c4"
+            android:layout_width="88dip"
+            android:layout_height="88dip"
+            android:layout_marginLeft="131dip"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/bm_select" />
+
+        <ImageButton
+            android:id="@+id/c5"
+            android:layout_width="88dip"
+            android:layout_height="88dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bx_select" />
+
+        <ImageButton
+            android:id="@+id/navball1"
+            android:layout_width="110dip"
+            android:layout_height="85dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/navball" />
+    </RelativeLayout>
+
+</FrameLayout>

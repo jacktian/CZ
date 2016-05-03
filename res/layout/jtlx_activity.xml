@@ -1,0 +1,131 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg2x" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapsView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <ImageButton
+        android:id="@+id/loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/map_location_me2x" />
+
+    <ImageButton
+        android:id="@+id/bus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/travelplan_bus2x" />
+
+    <ImageButton
+        android:id="@+id/car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/travelplan_car2x" />
+
+    <ImageButton
+        android:id="@+id/foot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/travelplan_foot2x" />
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_navi2x" >
+
+        <ImageButton
+            android:id="@+id/topimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin9"
+            android:layout_marginTop="@dimen/margin8"
+            android:background="@drawable/navi_icon_back2x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/topword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin11"
+            android:background="@drawable/navi_words2x" />
+    </LinearLayout>
+
+    <include layout="@layout/bottom_bar" />
+
+    <RelativeLayout
+        android:id="@+id/level2"
+        android:layout_width="240dip"
+        android:layout_height="155dip"
+        android:layout_gravity="bottom|center" >
+
+        <ImageButton
+            android:id="@+id/c1"
+            android:layout_width="80dip"
+            android:layout_height="88dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dip"
+            android:background="@drawable/zx_select" />
+
+        <ImageButton
+            android:id="@+id/c2"
+            android:layout_width="88dip"
+            android:layout_height="86dip"
+            android:layout_marginLeft="19dip"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/gl_select" />
+
+        <ImageButton
+            android:id="@+id/c3"
+            android:layout_width="94dip"
+            android:layout_height="98dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/hy_select" />
+
+        <ImageButton
+            android:id="@+id/c4"
+            android:layout_width="88dip"
+            android:layout_height="88dip"
+            android:layout_marginLeft="131dip"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/bm_select" />
+
+        <ImageButton
+            android:id="@+id/c5"
+            android:layout_width="88dip"
+            android:layout_height="88dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bx_select" />
+
+        <ImageButton
+            android:id="@+id/navball1"
+            android:layout_width="110dip"
+            android:layout_height="85dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/navball" />
+    </RelativeLayout>
+
+</FrameLayout>

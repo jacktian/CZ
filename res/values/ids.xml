@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="gridview" type="id"/>
+    <item name="webview" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="viewpager" type="id"/>
+    <item name="sidebar_layout_sidebar_left" type="id"/>
+    <item name="sidebar_layout_sidebar_right" type="id"/>
+    <item name="sidebar_layout_content" type="id"/>
+    <item name="selected_view" type="id"/>
+    <item name="github" type="id"/>
+    <item name="auto_focus" type="id"/>
+    <item name="benchmark_done" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="save" type="id"/>
+    <item name="save_succeeded" type="id"/>
+    <item name="save_failed" type="id"/>
+
+</resources>

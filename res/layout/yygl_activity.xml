@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg2x" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/detail_text_bg2x"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="96dp" >
+
+            <TextView
+                android:id="@+id/txtgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/yygl"
+                android:textColor="@color/dark" />
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/top_bar" />
+
+    <ImageView
+        android:id="@+id/shareicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/shareiconmarginringt"
+        android:layout_marginTop="@dimen/shareiconmargintop"
+        android:background="@drawable/navi_share2x" />
+
+    <include layout="@layout/bottom_bar" />
+
+    <RelativeLayout
+        android:id="@+id/level2"
+        android:layout_width="240dip"
+        android:layout_height="155dip"
+        android:layout_gravity="bottom|center" >
+
+        <ImageButton
+            android:id="@+id/c1"
+            android:layout_width="80dip"
+            android:layout_height="88dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dip"
+            android:background="@drawable/zx_select" />
+
+        <ImageButton
+            android:id="@+id/c2"
+            android:layout_width="88dip"
+            android:layout_height="86dip"
+            android:layout_marginLeft="19dip"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/gl_select" />
+
+        <ImageButton
+            android:id="@+id/c3"
+            android:layout_width="94dip"
+            android:layout_height="98dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/hy_select" />
+
+        <ImageButton
+            android:id="@+id/c4"
+            android:layout_width="88dip"
+            android:layout_height="88dip"
+            android:layout_marginLeft="131dip"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/bm_select" />
+
+        <ImageButton
+            android:id="@+id/c5"
+            android:layout_width="88dip"
+            android:layout_height="88dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bx_select" />
+
+        <ImageButton
+            android:id="@+id/navball1"
+            android:layout_width="110dip"
+            android:layout_height="85dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/navball" />
+    </RelativeLayout>
+
+</FrameLayout>

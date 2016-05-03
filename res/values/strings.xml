@@ -1,0 +1,287 @@
+<resources>
+
+    <string name="app_name">CZ</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">掌上嬉戏</string>
+    <string name="glo_ok">ok</string>
+    <string name="global_ok">继续浏览</string>
+    <string name="setnet">开启网络</string>
+    <string name="remind">囧囧检测到您没连接到网络呀！连接上网络获得更好的体验吧！</string>
+    <string name="remindgl">囧囧检测到您没连接到网络呀！无法刷新最新攻略！</string>
+    <string name="update">您已经是最新版本，谢谢使用！</string>
+    <string name="sxzc">在这片区域有着一个禁地，那就是兽人更高阶级所居住的魔方城，而持续了数千年的“征途”之战也从未停息过，让我们也加入这次的征途之战，体验一回兽人的原始新生活。那现在在我们面前的就是兽血征程游乐区，这段新的冒险旅程伴随着新的伙伴，人坐在船中，踏上征程之路，随着提升机达到高处，转过弯道随着激流逆流而上，在旋涡中从26米的高处飞流直下，劈波斩浪的一刹那，15米的滔天巨浪让您感受浑身湿透的惬意，震撼的快感绝对会令您的血液沸腾起来。当一切都恢复宁静，仿佛什么都没有发生过，只有你湿漉漉的头发证明着刚刚发生过什么。</string>
+    <string name="slxk">长久以来，神族人之间，一直隐藏着一个秘密：他们时常通过一组快速加速轨道，穿透嬉戏谷空间，通往另一个恒星系统。暗地里，神人将这种魔法过度称为：撕裂星空。在大家右手边就是我们撕裂星空，其轨道全长约855米，运行时最高时速约每小时88千米，是目前亚洲最高、最快的飞行过山车，它集美观、惊险于一身，是速度与激情的绝佳诠释，是目前世界上翻转次数最多的飞行过山车，配以喷泉等互动景观，令游客在零重力的疯狂中体验超速飞行的感受。过山车特殊的活动车架会将乘客的身体上摆至水平悬空位置，面朝大地，在运行过程中让乘客体验像雄鹰一样飞翔的感受，这也是过山车体验模式的创新。这种魔法特权只属于具有一定毅力等级的勇者，你是否拥有这种法力？如果想成为和神人一样的勇士，那就赶紧前来挑战！</string>
+    <string name="yzmj">奇幻的异域飞船，是阿拉丁的智慧创造，大家可以坐上全亚洲第一台顶级环形爱心过山车去穿越云的彼端，座在无压肩束缚的敞开式座椅内感受极速前行、加速转向、高速侧滑等多种高空运动元素，带给游客一种前所未有的最High体验，这便是云之密境，亚洲首创第一台轨道最长、高度最高、速度最快的360度环形过山车。</string>
+    <string name="tmhx">在嬉戏谷中，有着一位永恒的主角， CC公主！CC公主掌管着嬉戏谷奇幻世界里人、神、兽三界众生，她常年戴着“迷面之翼”面具，张开翅膀巡弋在嬉戏谷的天空，确保着世界的欢乐与祥和。然而如果想与女神CC公主有一段完美邂逅，那么在“天幕幻想”的圣殿大堂诚心祈祷，她便能现身于世，给予弱者光明与爱的启迪。 在我们面前的“天幕幻想”也被称之为是“天幕影院”，是国内大陆地区第一个集结众多特别效果于一身的圆顶形综合影院，也是唯一的一个360度环绕，全方位立体影院，其影片内容、技术可媲美2010世博会沙特馆天幕项目，甚至有过之而无不及，整个影片以CC公主作为故事主角，采用半透明银幕和藏于银幕后的LED合成表演，展现出恢弘的气势和绚丽夺目的效果。项目每场可以容纳观众500余人，大家站立观看整个顶部和四周的视频画面，值得骄傲的是“天幕幻想”4D影片是嬉戏谷特制原创的，变幻莫测的光影视效与幽远的蓝色基调融合叠化，壮观的流星雨弥漫空际，奇美至极的星座传说……天幕创造的不仅是一次视觉震撼，更为游客呈现一段唯美的心灵旅程。如果想和CC公主来一次近距离亲密接触，“天幕幻想”就必须体验一下！</string>
+    <string name="tjhk">在星际区，神人同时拥有自己的合金飞船，可以带着他们穿越不同的星球，飞跃外星峡谷。在我们的左手边就是神人们的飞船体验区“天际骇客”，也被称之为虚拟过山车，整个游乐设备占地面积约130平米，可以容纳40人同时观看，游客在观看动感影片时，顺着影片内容的变化，可感受身边所发生与立体影象对应的事件，从而营造一种与影片内容相一致的全感知环境。游客可以身临其境的感受一次独特的星际冒险，体验一次惊魂之旅。</string>
+    <string name="mhqt">迷兽大陆的最后一站 &#8212; &#8212;梦幻擎天。它可以让你体验穿越游戏文化的精髓之所在。这是世界上最大的XD飞行动感球幕影院，悬挂式动感座椅配合影片镜头的运动轨迹，让你真切感受什么叫做惊心动魄，闯进诡异魔幻的迷兽世界，一道闪电，心神未定，仙鹤载你飞入蜀山仙境，领略中国的古典和武侠的玄幻；又陷星际战场，人族和神族战火雷鸣，震撼至极；飞越最终幻想，感受后现代科技和海上城市的宏大气势；最终落地嬉戏谷中华龙塔，炫丽的烟花、宏伟的中华龙塔……“梦幻擎天”带你穿越游戏世界中的经典圣地，由宇宙初始启程，穿越历史长廊，饱览游戏胜景，让游戏达人找回永恒的心灵归属。</string>
+    <string name="details_adlxf">长三角唯一逼真水怪竞速滑道，史无前例的劲酷体验，在龙腹上戏水滑行，感受154米奥丁龙恐怖之旅。</string>
+    <string name="details_chpp">将五颜六色的热气球和漂亮的座舱组合在一起，运行时上下旋转，坐在其中就像是在跳桑巴舞一样。</string>
+    <string name="details_jfw">从垂直于地面的高空跃入飓风中心，把身心交给10米/秒的加速度风暴，感受360度托马斯回旋踢一样的超速漂移！</string>
+    <string name="details_lklx">洛克神宠登场，进攻还是防守，小洛克们来一场智慧和魔力水花的淋漓大战吧！</string>
+    <string name="details_rlw">感受海王波塞冬的滔天巨浪！30米宽、3米高的海啸级风浪，6000平米的游弋浅海，更有激情热舞表演，带来不一样的夏日体验。</string>
+    <string name="details_xfyz">国内唯一可公转兼自转的浪漫摩天轮。</string>
+    <string name="details_yxz">体量最大的超级奇幻水寨，可容纳千人清凉戏水。澎湃翻水桶、互动大水炮、淋漓攀爬梯、多种曲滑道，感受夏威夷的阳光海滩，更是深受亲子家庭欢迎的戏水享受！</string>
+    <string name="version">当前版本：2.0</string>
+    <string name="fjtel">匪警电话</string>
+    <string name="hjtel">火警电话</string>
+    <string name="jjtel">急救中心</string>
+    <string name="fj">110</string>
+    <string name="hj">119</string>
+    <string name="jj">120</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="expect">敬请期待</string>
+    <string name="aboutus">江苏甲子网络科技有限公司成立于2008年，获江苏省发展和改革委员会的批准，在常州市武进太湖湾度假区内规划建设江苏数字文化产业振兴基地，项目一期将重点建设其中的“一园”即环球数字嬉戏谷动漫游戏文化主题公园；“一网”CCJOY中国数字线上互动娱乐门户网， 真正达成了线上线下一体的娱乐形式。\r\n   公司作为中国互动娱乐领域的生力军，始终致力互联网和线下资源“虚实互动”娱乐新体验，同时努力促进数字文化生活，通过互联网为用户提供多元化的娱乐服务，为大众创造更愉悦的线上线下互动体验。\r\n   公司旗下共有4个研发团队共120余人；拥有成功研发经验；以“嬉戏”为主题切入点，自主研发端游产品《中华龙塔》《密传2》；页游产品《嬉戏幻想》《嬉戏飞车》《上古传奇》等；手机游戏《嬉游记》将于2013年强势推出，产品成功销往港、澳、台、东南亚等地，现均已上线运营。</string>
+    <string name="plswait">please wait....</string>
+    <string name="yygl"> 文字描述：
+\n\
+公交：\n\
+    常州市区常州市中心：乘坐BRT1号到武进公交中心站，转73到环球动漫嬉戏谷站下\n\
+    火车站：坐68路或70路在潘家桥下\n\
+    \n\
+    【直达大巴】：\n\
+    常州火车站常州客运站38.3公里：乘坐常州客运嬉戏谷专线车直达园区。\n\
+    无锡火车站无锡客运站38公里：乘坐无锡客运嬉戏谷专线车直达园区。\n\
+    常州汽车总站，武进、新北、花园、清凉中心站，金坛、溧阳汽车站。周边省市均有直达班车到达。\n\
+    \n\
+    \n\
+    【自驾信息】：\n\
+    长江三角洲经济圈 交通指南\n\
+    常州&#8212;&#8212;上海:170km 常州&#8212;&#8212;杭州:168km 常州&#8212;&#8212;南京:130km 常州&#8212;&#8212;苏州:86km 常州&#8212;&#8212;无锡:40km 常州&#8212;&#8212;镇江:80km 嬉戏谷位于江苏省常州市武进太湖湾旅游度假区内，地处武进潘家、雪堰两镇境内。\n\
+    东至雪马公路，西至潘分公路，北至锡宜公路，南濒太湖 沪宁高速、宁杭高速、沿江高速和锡宜高速交汇而过\n\
+    \n\
+    【车行线路】：\n\
+    【上海、苏州方向】：\n\
+    1、沪宁高速→锡宜高速→阳山出口下→太湖湾\n\
+    2、沿江高速→武进出口下→常漕路→漕桥→太湖湾\n\
+    【南京出发】：\n\
+    1、宁杭高速→（宜兴转）锡宜高速（无锡方向）→常州漕桥出口下→太湖湾\n\
+    2、沪宁高速→无锡北转锡宜高速\n\
+    【杭州出发】：\n\
+    杭宁高速→（宜兴转）锡宜高速（无锡方向）→常州漕桥→太湖湾\n\
+    \n\
+    【扬州、镇江方向 】：\n\
+    扬溧高速→沪宁高速→锡宜高速（无锡方向）→常州漕桥出口下→太湖湾\n\
+    扬溧高速→（金坛西转）沿江高速（常州方向）→武进出口下→常漕路（往向）→漕桥（往东）→太湖湾\n\
+    \n\
+    【南通、泰州方向】：\n\
+    过江阴大桥→锡澄高速（无锡方向）→锡宜高速（宜兴方向）→常州漕桥出口下→太湖湾\n\
+    \n\
+    【常州市内出发】：\n\
+    1、232省道→漕桥（往东）→太湖湾\n\
+    2、312国道→232省道→漕桥（往东）→太湖湾\n\
+    3、常武路\n\
+    4、常漕路 漕桥，往潘家方向第二个路口（约20公里），右转走盘山路（8公里）；也可到漕桥往潘家方向第一个路口（约10公里），右转向周铁方向（约4公里）到分水，向左转走环湖路到达嬉戏谷。 \n\
+    5.火车站坐68路或70路在潘家和雪堰的交界处即太湖弯度假区下 \n\
+    \n\
+    【航空】：\n\
+    【常州机场】：位于新北区罗溪镇，距离市中心18公里，有机场巴士往返市区； \n\
+    【南京禄口国际机场】：机场到常州大酒店每天都有固定往返班车，可以乘坐机场大巴至中华门长途汽车站乘汽车到常州，或者在中华门转乘地铁至南京火车站乘火车至常州。 \n\
+    【上海浦东国际机场】：先到达上海市区，然后乘火车或汽车来常州，乘坐动车上海至常州约1小时。 \n\
+    【无锡机场】：可以乘机场大巴到无锡火车站，乘火车或大巴至常州，可以乘坐107路（1.5元）到招商城站下车换乘公交K15（2元）到巴士酒家站下车换乘公交26路到雪堰站下车。 \n\
+    \n\
+    【常州市内——嬉戏谷 】\n\
+    1、 城际——————高力汽配（纺织城）———常发（礼嘉）———南宅———目的地 \n\
+    2、旅行社———牛塘（淹城西）———高新区——————前黄———漕桥———目的地 \n\
+    3、湖塘乐购（新天地）———前黄———漕桥————目的地 \n\
+    4、BRT总站（大学城）———洛阳地区————南宅地区———太湖湾"\n\
+    \n\
+    \n\
+    \n\
+    \n\</string>
+    <string name="mrzy">将中国最大的儿童网络社区“摩尔庄园”移植至线下，囊括“海底精灵城”、“宝贝地盘”、“空中大巡逻”、“飞旋骑士”、“魔法精灵”、“可口可乐快乐工坊”等低龄游乐项目。其中“海底精灵城”项目采用4D震撼影映技术，完美升级传统立体影院，令电影艺术攀升至全新境界。精心设计的机械特效与完美的银幕表现虚实结合，令游客在欣赏影片时获得视觉、听觉、触觉、嗅觉等全方位的感官冲击。</string>
+    <string name="jlh">这是摩尔庄园、传奇天下、星际传说、迷兽大陆四个板块的中心，湖中挺立着精致典雅、风格独特的神秘之岛，岛湖相连，脉脉依依，给人以无尽想象，续写着不朽的浪漫传奇。精灵湖为游客呈现的将是风声的试听盛宴，不仅遍邀世界顶尖的演艺团体驻演，更有异彩纷呈的大型水上花车巡游表演，将经典的动漫角色游戏形象，活灵活现的呈现在大众面前。精灵湖的夜景更值得期待，夜公园开放时期，融汇众多艺术元素和尖端科技打造的彩船巡游表演，震撼奇妙的激光水幕电影，绚丽生辉的焰火表演，炫彩迷幻的激光水景秀将掀起永不落幕的狂欢。</string>
+    <string name="cqtx">作为“人”文化的象征，以竞技挑战、奇趣冒险为特色，涵盖“猎魂”、“冰剑国度”、“云之秘境”、“龙行天下”、“天堂之舵”、“嬉戏飞车”、“游戏要塞”等游乐项目。其中“游戏要塞”项目是世界最大的专业图形芯片公司Nvidia唯一授权设立的全球游戏内容一站式体验中心，完美呈现世界级的一流影像技术，游客将在新奇刺激的穿梭体验中得到极大的视觉满足。</string>
+    <string name="sds">承载动漫游戏文化过去与未来的基石，是游戏达人的圣地，中华龙塔垂直高度88米，与英雄门对称成为主题园区的中轴线，是嬉戏谷的地标建筑。登山台阶两侧陈设有寓意游戏文化八大美德的八座主题雕塑，塔上有三层观光平台和多个以动漫、电子竞技为主题的博览馆，可居高临下，尽赏全园，更是俯瞰太湖盛景之佳地。</string>
+    <string name="xjcs">“神”文化的繁衍之地，包括“大话嬉戏”、“撕裂星空”、“天际骇客”、“天幕幻想”、“雷神之怒”等高科技游乐项目和商业区。其中“天幕幻想”项目是大陆地区唯一的天幕影院，360度环绕式全景体验、巨大的圆拱形银幕配以高保真的立体音效，变幻莫测的光影视效与幽暗的蓝色基调融合叠化，将为游客呈现一段唯美的心跳里程。</string>
+    <string name="msdl">饱含魔幻色彩，以“冒险”、“生动”、“挑战”为核心主题，拥有“热浪湾”“兽血征程”、“魔神天途”、“梦幻擎天”等顶尖刺激的大型游乐设施和个性服务。其中“魔兽天途”是一个4D Ride项目，综合了巨幕、环幕4D电影、多自由度动感游览车、现场特技等多项高科技表现形式，让游客在真实场景和银幕构成的立体虚景之间遨游穿梭，享受无穷的乐趣。</string>
+    <string name="hxsl">静谧的传说大陆——幻想森林,时空缝隙中蕴育生长的奇妙森林，神兽摘星的摩天轮，神话成真的绿洲迷宫，实现你的所有幻想。</string>
+    <string name="lkwg">这是“腾讯”旗下大型儿童魔法社区“洛克王国”的实景社区。和“摩尔庄园”一样，洛克王国也是嬉戏谷给小朋友们专门设计的游乐天堂，它被设计成大型室内游乐区。各个游乐项目以洛克王国故事为主线，主要以室内项目为主，有旋转飞椅、桑巴气球、转转杯等儿童游乐设备，并配有大型室外戏水项目---水战船。小朋友们可以体验神奇飞毯到天空飞舞，也可以去一下我们的鲸鱼杯和彩虹泡泡感受在空中上下飞行的感觉，体验真实的哈利波特和爱丽丝的奇幻仙境。同时这里也是魔法洛克生活的区域，小朋友们可以到我们的魔法学院，在这里上上魔法课，学习飞天扫帚的魔咒；如果遇见小洛克，别忘了要和他们合影哦。在“洛克王国”里还有专门为小朋友设计的蓝鱼餐厅，餐厅内的装饰以及菜品别具一格、独具匠心，如果大家玩累了，不妨进去尝尝我们的咕噜茶休息片刻</string>
+    <string name="wmssj">华东最奇幻的超级海域、亚洲顶级玩水圣地——完美水世界，由于大家要湿身征战，所以放在行程的最后。“完美水世界”是嬉戏谷与国内游戏巨头公司“完美世界”联合打造的水上主题公园。九大王牌项目汇聚于此，超乎想象的惊险刺激。</string>
+    <string name="sign">签到成功！分享一下吧！</string>
+    <string name="zhlt">中华龙塔</string>
+    <string name="xxtl">嬉戏天路</string>
+    <string name="lh">猎魂</string>
+    <string name="hdwh">海盗王号</string>
+    <string name="lxtx">龙行天下</string>
+    <string name="ttzd">天堂之舵</string>
+    <string name="yzmj2">云之秘境</string>
+    <string name="slxk2">撕裂星空</string>
+    <string name="dhxx2">大话嬉戏</string>
+    <string name="tjhk2">天际骇客</string>
+    <string name="tmhx2">天幕幻想</string>
+    <string name="lszn2">雷神之怒</string>
+    <string name="yywg2">月银王国</string>
+    <string name="smzd2">神秘之岛</string>
+    <string name="jlbd2">精灵半岛</string>
+    <string name="bjgd2">冰剑国度</string>
+    <string name="yxys2">游戏要塞</string>
+    <string name="cqm2">传奇门</string>
+    <string name="fxqs2">飞旋骑士</string>
+    <string name="mfjl2">魔法精灵</string>
+    <string name="bbdp2">宝贝地盘</string>
+    <string name="mmgzdj2">么么公主的家</string>
+    <string name="kzdxl2">空中大巡逻</string>
+    <string name="glgl2">咕噜咕噜</string>
+    <string name="hdjlc2">海底精灵城</string>
+    <string name="meq2">摩尔桥</string>
+    <string name="msq2">迷兽桥</string>
+    <string name="rlw2">热浪湾</string>
+    <string name="sxzc2">兽血征程</string>
+    <string name="mstt2">魔神天途</string>
+    <string name="msm2">迷兽门</string>
+    <string name="mhqt2">梦幻擎天</string>
+    <string name="xxzhlx2">嬉戏族欢乐港</string>
+    <string name="yhnlzyct">银河能量中央餐厅</string>
+    <string name="mmjd">面面俱到主题餐厅</string>
+    <string name="shqz">水浒Q传</string>
+    <string name="ttw">甜甜屋</string>
+    <string name="cqmsj">传奇美食街</string>
+    <string name="zcly">壮翅凌云</string>
+    <string name="ldcf">零度茶坊</string>
+    <string name="yhkf">一壶咖啡</string>
+    <string name="kkklklgf">可口可乐快乐工坊</string>
+    <string name="lmtx">拉姆甜心</string>
+    <string name="mekxdc">摩尔开心大厨</string>
+    <string name="drszztct">达人尚坐主题餐厅</string>
+    <string name="ksxw">酷爽小屋</string>
+    <string name="jjs">囧囧烧</string>
+    <string name="twbx">天外冰鲜</string>
+    <string name="hxsk">火星烧烤</string>
+    <string name="dnsms">斗牛士美食</string>
+    <string name="emgs">恶魔果实</string>
+    <string name="wohztct">WOH主题餐厅</string>
+    <string name="toliet">厕所</string>
+    <string name="xxfc">嬉戏飞车</string>
+    <string name="fst">飞士堂</string>
+    <string name="hzmb">海贼秘宝</string>
+    <string name="wjzdy">玩具总动员</string>
+    <string name="mfsk">魔方时空</string>
+    <string name="cqmgc">传奇梦工厂</string>
+    <string name="cqsh">传奇商会</string>
+    <string name="mhlb">魔幻量版</string>
+    <string name="oy">哦耶</string>
+    <string name="yldbbx">伊莲的百宝箱</string>
+    <string name="mfhzg">魔法海族馆</string>
+    <string name="keppd">可儿品牌店</string>
+    <string name="gzzdy">公仔总动员</string>
+    <string name="jmztd">几米主题店</string>
+    <string name="atm">奥特曼_变形金刚</string>
+    <string name="mtjt">馒头家庭</string>
+    <string name="xcm">熊出没</string>
+    <string name="yxh">悠嘻猴</string>
+    <string name="xyyhtl">喜洋洋与灰太狼</string>
+    <string name="hmbb">海绵宝宝</string>
+    <string name="tghz">糖果盒子</string>
+    <string name="hellok">HELLO KITTY</string>
+    <string name="dlam">哆啦A梦</string>
+    <string name="xxmz">嬉戏秘藏</string>
+    <string name="yzqp">宇宙气泡</string>
+    <string name="qqsxj">奇趣搜寻家</string>
+    <string name="xcmnd">星辰MINI店</string>
+    <string name="yhs">银河STUDIO</string>
+    <string name="fsyjs">法师研究所</string>
+    <string name="qcj">倾城剑</string>
+    <string name="slbz">失落宝藏</string>
+    <string name="lxfsb">历险封神榜</string>
+    <string name="xyxm">西游降魔</string>
+    <string name="lymz">绿野迷踪</string>
+    <string name="xfyz">幸福运转</string>
+    <string name="lyft">蓝宇飞艇</string>
+    <string name="xzjl">旋转激流</string>
+    <string name="dhjl">地海惊流</string>
+    <string name="jyc">鲸鱼船</string>
+    <string name="sqft">神奇飞毯</string>
+    <string name="chpp">彩虹泡泡</string>
+    <string name="lklx">洛克历险</string>
+    <string name="adlxf">奥丁龙旋风</string>
+    <string name="xwsl">漩涡试练</string>
+    <string name="jlsy">巨龙深渊</string>
+    <string name="jfw">飓风碗</string>
+    <string name="mzlzl">麦哲伦之路</string>
+    <string name="jsxly">极速训练港</string>
+    <string name="rlw">热浪湾</string>
+    <string name="wfd">无风带</string>
+    <string name="yxz">英雄寨</string>
+    <string name="hnzj">哈尼之家</string>
+    <string name="lyxz">绿野仙踪</string>
+    <string name="ssmsgc">时尚美食广场</string>
+    <string name="lyct">蓝鱼餐厅</string>
+    <string name="slsq">薯来薯去</string>
+    <string name="hsdcct">海上大厨餐厅</string>
+    <string name="ksh">酷爽号</string>
+    <string name="klyb">快乐饮吧</string>
+    <string name="rhkbjz">入海口补给站</string>
+    <string name="rdmsgc">热带美食广场</string>
+    <string name="wmw">万妙屋</string>
+    <string name="slyz">森林驿站</string>
+    <string name="bdclw">博得材料屋</string>
+    <string name="lkxz">洛克小站</string>
+    <string name="yzzby">泳者装备营</string>
+    <string name="szbl">水中部落</string>
+    <string name="spsj">水瓶世纪</string>
+    <string name="ncbl">弄潮部落</string>
+    <string name="food">餐饮</string>
+    <string name="travel">景点</string>
+    <string name="service">服务</string>
+    <string name="shop">购物</string>
+    <string name="swzl">失物招领</string>
+    <string name="cydh">常用电话</string>
+    <string name="yygx">应用更新</string>
+    <string name="jcxz">精彩下载</string>
+    <string name="gywm">关于我们</string>
+    <string name="sybz">使用帮助</string>
+    <string name="staterefreshbtn">刷新设备信息，请稍后。。。</string>
+    <string name="bus">公交</string>
+    <string name="delicious">美食</string>
+    <string name="hotel">酒店</string>
+    <string name="bank">银行</string>
+    <string name="jtlx">1 室内项目路线 \n\
+
+    海底精灵城 ⇒ 小摩尔大冒险 ⇒ 游戏要塞 ⇒ 冰剑国度 ⇒ 大话嬉戏 ⇒ 天幕幻想 ⇒ 天际骇客 ⇒ 魔神天途 ⇒ 梦幻擎天 \n\
+
+    \n\
+
+    2 亲子游项目专用路线 \n\
+
+    海底精灵城 ⇒ 小摩尔大冒险 ⇒ 空中大巡逻 ⇒ 魔法精灵 ⇒ 飞旋骑士 ⇒ 游戏要塞 ⇒ 冰剑国度 ⇒ 天堂之舵 ⇒ 龙行天下 ⇒ 天幕幻想 ⇒ 大话嬉戏 ⇒ 天际骇客 ⇒ 魔神天途 ⇒ 梦幻擎天 \n\
+
+    \n\
+
+    3 惊险刺激项目路线 \n\
+
+    梦幻擎天 ⇒ 魔神天途 ⇒ 兽血征程 ⇒ 雷神之怒 ⇒ 天际骇客 ⇒ 撕裂星空 ⇒ 龙行天下 ⇒ 云之秘境 ⇒ 天堂之舵 \n\
+
+    \n\
+
+    备注：公园可能因项目更新、游客过多、恶劣天气或其他特殊活动临时关闭，特定项目需按照身高及乘坐须知来游玩，详细内容请致电垂询:4001588788
+      \n\
+    \n\
+    \n\
+    \n\
+    \n\
+    \n\</string>
+    <string name="homenew1">2014年1月1日-2月16日，园区窗口购票或办理年卡，即送超值动漫贺岁礼。
+满心期待的马年即将来临，“龙马精神”、“走马观花”、“青梅竹马”、“神马”等一系列词汇又再度受到追捧。嬉戏谷为迎接元旦、春节这两个中国传统的重要节日，别出心裁的推出盛大的“萌马迎新雕塑展”活动。2014年1月1日-2月16日活动期间，凡园区窗口购票或办理年卡的游客，即可获赠超值动漫贺岁礼，生动可爱的卡通囧囧手表、儿童益智版绘图套装、精致限量CC公主U盘等丰富贺岁礼让人心动不已。
+说到举办本次动漫萌马雕塑展，嬉戏谷在构想和筹备上可谓煞费苦心。十余个或夸张搞怪、或憨态可掬、或栩栩如生、或寓意美好的“马”主题雕塑，将在淘宝大街被一字排开，每一个极其罕见的马主题雕塑造型都将激发游客强烈的拍照热情，尤其将引得小孩子强烈的欢喜和欢乐。其中最吸引眼球的将是“走马观花”雕塑，近3米高的花簇包围着两只可爱的小马驹，精湛的雕刻工艺及绚丽饱满的色彩，将非常符合迎新的喜庆气氛。此外，元旦、春节假期期间，园内演艺也将升级呈现，迎宾花车秀、街头卖艺、活体雕塑、泥塑、糖画、木偶戏、魔术、戏曲等，各式精彩表演都将轮番登场。丰富的游览内容，将给游客带去与众不同的迎新体验之旅。
+除了参与这些新增内容外，游客还可以在嬉戏谷来一次奇幻体验之旅，球幕影院、天幕影院、4D虚拟过山车、全息投影剧场等国内罕见的室内科技体验项目，更将使游客不虚此行。据悉，2014年1月1日起，嬉戏谷的门票价格也将恢复到成人票230元/张，儿童票130元/张，大学生票180元/张。此外，嬉戏谷将在春节前一周（1月24日至30日期间）实施闭园，请广大游客在此期间不要前往，1月31日（大年初一）起正常开放。
+\n\
+\n\
+\n\
+\n\
+\n\
+\n\
+\n\</string>
+    <string name="homenew2">嬉戏谷微信大型虚实互动闯关游戏全新上线[威武]扫一扫，[推荐]加嬉戏谷为好友（微信号：ccjoy2011），输入“奇幻战纪”和囧囧一同开启奇幻之旅！[牛]囧囧期待着你们加入勇士的行列[hold住]真正的勇士你们在哪里！[真V5]全部通关的勇士还可以获得最后的战利品哦[给劲]</string>
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
+    <string name="weibosdk_demo_token_has_existed">Token 仍在有效期内，无需再次登录。</string>
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+
+</resources>

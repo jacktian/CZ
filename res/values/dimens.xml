@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- 默认 -->
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+    <!-- gl_activity中刷新按钮距离 -->
+    <dimen name="margin">250dp</dimen>
+
+    <!-- 字体大小10dp -->
+    <dimen name="nine">9dp</dimen>
+    <!-- 字体大小10dp -->
+    <dimen name="ten">10dp</dimen>
+    <!-- 字体大小11dp -->
+    <dimen name="eleven">11dp</dimen>
+    <!-- 字体大小12dp -->
+    <dimen name="twelve">12dp</dimen>
+    <!-- 字体大小13dp -->
+    <dimen name="thirteen">13dp</dimen>
+    <!-- 字体大小14dp -->
+    <dimen name="fourteen">14dp</dimen>
+    <!-- 字体大小15dp -->
+    <dimen name="fifteen">15dp</dimen>
+    <!-- 字体大小16dp -->
+    <dimen name="sixteen">16dp</dimen>
+    <!-- 字体大小17dp -->
+    <dimen name="seventeen">17dp</dimen>
+    <!-- 字体大小18dp -->
+    <dimen name="eighteen">18dp</dimen>
+    <!-- 字体大小19dp -->
+    <dimen name="nineteen">19dp</dimen>
+    <!-- 字体大小20dp -->
+    <dimen name="twenty">20dp</dimen>
+    <!-- 字体大小21dp -->
+    <dimen name="twentyone">21dp</dimen>
+    <!-- 字体大小22dp -->
+    <dimen name="twentytwo">22dp</dimen>
+    <!-- 字体大小23dp -->
+    <dimen name="twentythree">23dp</dimen>
+    <!-- 字体大小24dp -->
+    <dimen name="twentyfour">24dp</dimen>
+    <!-- 字体大小25dp -->
+    <dimen name="twentyfive">25dp</dimen>
+    <dimen name="glcardcenter_margin">50dp</dimen>
+
+</resources>

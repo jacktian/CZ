@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/intro_bg2x" >
+    <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin7"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView  android:id="@+id/glcarditemimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/glcardcenter_margin"
+                    android:src="@drawable/recommend_proj_add1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/glcardcenter_margin"
+                    android:src="@drawable/intro_proj_bg2x" />
+
+                <ImageView  android:id="@+id/glcarditemtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_title_52x" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" >
+
+                <Button
+                    android:id="@+id/introbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/recommend_btn_intro2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/sininbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/introbtn"
+                    android:background="@drawable/recommend_btn_sinin2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/navibtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sininbtn"
+                    android:background="@drawable/recommend_btn_navi2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/experiencebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sininbtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/recommend_btn_experience2x"
+                    android:onClick="btnclick" />
+            </RelativeLayout>
+
+</LinearLayout>

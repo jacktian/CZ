@@ -1,0 +1,60 @@
+<resources>
+
+    <dimen name="topbackbar">16dp</dimen>
+    <dimen name="topbackbarmargintop">12dp</dimen>
+    <!-- hdpi -->
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+    <!-- 公司简介字体 -->
+    <dimen name="about">15sp</dimen>
+
+    <!-- gl_activity中刷新按钮距离 -->
+    <dimen name="margin">260dp</dimen>
+    <!-- gl_activity中忙、闲距离 -->
+    <dimen name="margin1">265dp</dimen>
+    <!-- gl_activity中刷新按钮margintop距离 -->
+    <dimen name="margin2">70dp</dimen>
+    <!-- gl_activity中忙、闲margintop距离 -->
+    <dimen name="margin3">125dp</dimen>
+    <!-- gl_activity中分类按钮layout_marginLeft距离 -->
+    <dimen name="margin4">15dp</dimen>
+    <!-- gl_activity中分类按钮layout_marginTop距离 -->
+    <dimen name="margin5">12dp</dimen>
+    <dimen name="glcardcenter_margin">50dp</dimen>
+    <!-- glcard_activity中图片距离top -->
+    <dimen name="margin6">30dp</dimen>
+    <!-- glcard_activity中FrameLayout距离top -->
+    <dimen name="margin7">0dp</dimen>
+
+    <!-- jtlx_activity中返回按钮距离top -->
+    <dimen name="margin8">12dp</dimen>
+    <!-- jtlx_activity中返回按钮距离left -->
+    <dimen name="margin9">12dp</dimen>
+    <!-- jtlx_activity中文字按钮距离left -->
+    <dimen name="margin10">13dp</dimen>
+    <!-- jtlx_activity中文字按钮距离top -->
+    <dimen name="margin11">12dp</dimen>
+
+    <!-- list_item中phototimeyear按钮距离top -->
+    <dimen name="margin12">34dp</dimen>
+    <!-- list_item中phototimeyear按钮距离left -->
+    <dimen name="margin13">9dp</dimen>
+    <!-- list_item中itemimg按钮距离top -->
+    <dimen name="margin14">110dp</dimen>
+    <!-- list_item中phototimeday按钮距离top -->
+    <dimen name="margin15">10dp</dimen>
+
+    <!-- tstj_activity中shareicon按钮距离top -->
+    <dimen name="margin16">12dp</dimen>
+    <!-- tstj_activity中shareicon按钮距离right -->
+    <dimen name="margin17">12dp</dimen>
+    <dimen name="cardiconmargin">15dp</dimen>
+    <dimen name="cardiconmargintop">12dp</dimen>
+    <dimen name="cameraiconmarginright">15dp</dimen>
+    <dimen name="cameraiconmargintop">18dp</dimen>
+    <dimen name="shareiconmarginringt">15dp</dimen>
+    <dimen name="shareiconmargintop">12dp</dimen>
+
+</resources>

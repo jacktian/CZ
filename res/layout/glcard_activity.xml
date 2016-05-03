@@ -1,0 +1,772 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutlu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg2x" >
+
+    <ViewFlipper
+        android:id="@+id/CardFlipper1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:flipInterval="1000"
+        android:inAnimation="@anim/push_left_in"
+        android:outAnimation="@anim/push_left_out"
+        android:persistentDrawingCache="animation" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/intro_bg2x"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="@dimen/margin7" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    android:src="@drawable/recommend_proj_52x" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    android:src="@drawable/intro_proj_bg2x" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_title_52x" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" >
+
+                <Button
+                    android:id="@+id/introbtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/recommend_btn_intro2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/sininbtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/introbtn1"
+                    android:background="@drawable/recommend_btn_sinin2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/navibtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sininbtn1"
+                    android:background="@drawable/recommend_btn_navi2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/experiencebtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sininbtn1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/recommend_btn_experience2x"
+                    android:onClick="btnclick" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/intro_bg2x"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_proj_42x" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/intro_proj_bg2x" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_title_42x" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" >
+
+                <Button
+                    android:id="@+id/introbtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/recommend_btn_intro2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/sininbtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/introbtn2"
+                    android:background="@drawable/recommend_btn_sinin2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/navibtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sininbtn2"
+                    android:background="@drawable/recommend_btn_navi2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/experiencebtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sininbtn2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/recommend_btn_experience2x"
+                    android:onClick="btnclick" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/intro_bg2x"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_proj_32x" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/intro_proj_bg2x" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_title_32x" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" >
+
+                <Button
+                    android:id="@+id/introbtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/recommend_btn_intro2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/sininbtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/introbtn3"
+                    android:background="@drawable/recommend_btn_sinin2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/navibtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sininbtn3"
+                    android:background="@drawable/recommend_btn_navi2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/experiencebtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sininbtn3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/recommend_btn_experience2x"
+                    android:onClick="btnclick" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/intro_bg2x"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_proj_22x" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/intro_proj_bg2x" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_title_22x" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" >
+
+                <Button
+                    android:id="@+id/introbtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/recommend_btn_intro2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/sininbtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/introbtn4"
+                    android:background="@drawable/recommend_btn_sinin2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/navibtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sininbtn4"
+                    android:background="@drawable/recommend_btn_navi2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/experiencebtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sininbtn4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/recommend_btn_experience2x"
+                    android:onClick="btnclick" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/intro_bg2x"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_proj_12x" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/intro_proj_bg2x" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_title_12x" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" >
+
+                <Button
+                    android:id="@+id/introbtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/recommend_btn_intro2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/sininbtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/introbtn5"
+                    android:background="@drawable/recommend_btn_sinin2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/navibtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sininbtn5"
+                    android:background="@drawable/recommend_btn_navi2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/experiencebtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sininbtn5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/recommend_btn_experience2x"
+                    android:onClick="btnclick" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout6"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/intro_bg2x"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:background="@drawable/recommend_proj_02x" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/intro_proj_bg2x" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_title_02x" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" >
+
+                <Button
+                    android:id="@+id/introbtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/recommend_btn_intro2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/sininbtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/introbtn6"
+                    android:background="@drawable/recommend_btn_sinin2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/navibtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sininbtn6"
+                    android:background="@drawable/recommend_btn_navi2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/experiencebtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sininbtn6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/recommend_btn_experience2x"
+                    android:onClick="btnclick" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout7"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/intro_bg2x"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_proj_02x" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/intro_proj_bg2x" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_title_02x" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" >
+
+                <Button
+                    android:id="@+id/introbtn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/recommend_btn_intro2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/sininbtn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/introbtn7"
+                    android:background="@drawable/recommend_btn_sinin2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/navibtn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sininbtn7"
+                    android:background="@drawable/recommend_btn_navi2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/experiencebtn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sininbtn7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/recommend_btn_experience2x"
+                    android:onClick="btnclick" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout8"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/intro_bg2x"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_proj_02x" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/intro_proj_bg2x" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_title_02x" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" >
+
+                <Button
+                    android:id="@+id/introbtn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/recommend_btn_intro2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/sininbtn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/introbtn8"
+                    android:background="@drawable/recommend_btn_sinin2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/navibtn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sininbtn8"
+                    android:background="@drawable/recommend_btn_navi2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/experiencebtn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sininbtn8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/recommend_btn_experience2x"
+                    android:onClick="btnclick" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout9"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/intro_bg2x"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_proj_02x" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/intro_proj_bg2x" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/recommend_title_02x" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" >
+
+                <Button
+                    android:id="@+id/introbtn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/recommend_btn_intro2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/sininbtn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/introbtn9"
+                    android:background="@drawable/recommend_btn_sinin2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/navibtn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sininbtn9"
+                    android:background="@drawable/recommend_btn_navi2x"
+                    android:onClick="btnclick" />
+
+                <Button
+                    android:id="@+id/experiencebtn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sininbtn9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/recommend_btn_experience2x"
+                    android:onClick="btnclick" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ViewFlipper>
+
+    <include layout="@layout/top_bar" />
+
+    <include layout="@layout/bottom_bar" />
+
+    <RelativeLayout
+        android:id="@+id/level2"
+        android:layout_width="240dip"
+        android:layout_height="155dip"
+        android:layout_gravity="bottom|center" >
+
+        <ImageButton
+            android:id="@+id/c1"
+            android:layout_width="80dip"
+            android:layout_height="88dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dip"
+            android:background="@drawable/zx_select" />
+
+        <ImageButton
+            android:id="@+id/c2"
+            android:layout_width="88dip"
+            android:layout_height="86dip"
+            android:layout_marginLeft="19dip"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/gl_select" />
+
+        <ImageButton
+            android:id="@+id/c3"
+            android:layout_width="94dip"
+            android:layout_height="98dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/hy_select" />
+
+        <ImageButton
+            android:id="@+id/c4"
+            android:layout_width="88dip"
+            android:layout_height="88dip"
+            android:layout_marginLeft="131dip"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/bm_select" />
+
+        <ImageButton
+            android:id="@+id/c5"
+            android:layout_width="88dip"
+            android:layout_height="88dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bx_select" />
+
+        <ImageButton
+            android:id="@+id/navball1"
+            android:layout_width="110dip"
+            android:layout_height="85dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/navball" />
+    </RelativeLayout>
+
+</FrameLayout>

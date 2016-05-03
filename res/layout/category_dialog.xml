@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@drawable/gardenguidecell_bg2x" >
+
+    <Button
+        android:id="@+id/category1"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="125dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/map_menuitem_travel2x"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category1"
+        android:layout_marginLeft="128dip"
+        android:text="@string/travel"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/category3"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="125dip"
+        android:background="@drawable/map_menuitem_food2x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category3"
+        android:layout_marginLeft="23dip"
+        android:text="@string/food"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/category4"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="230dip"
+        android:layout_marginTop="125dip"
+        android:background="@drawable/map_menuitem_service2x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category4"
+        android:layout_marginLeft="233dip"
+        android:text="@string/service"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/category5"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="125dip"
+        android:layout_marginTop="220dip"
+        android:background="@drawable/map_menuitem_shop2x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category5"
+        android:layout_marginLeft="128dip"
+        android:text="@string/shop"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg2x" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="60dip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dip" >
+
+        <View
+            android:id="@+id/v_dot0"
+            style="@style/dot_style"
+            android:background="@drawable/dot_focused" />
+
+        <View
+            android:id="@+id/v_dot1"
+            style="@style/dot_style" />
+
+        <View
+            android:id="@+id/v_dot2"
+            style="@style/dot_style" />
+
+        <View
+            android:id="@+id/v_dot3"
+            style="@style/dot_style" />
+
+        <View
+            android:id="@+id/v_dot4"
+            style="@style/dot_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/detail_bg2x" >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="230dp" >
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="jjdjdjdjdjdjdjjdj"
+                android:textColor="@color/dark" />
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/top_bar" />
+
+    <include layout="@layout/bottom_bar" />
+
+</FrameLayout>

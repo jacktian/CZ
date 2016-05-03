@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_navi2x"
+        android:gravity="right" >
+
+        <ImageButton
+            android:id="@+id/navilocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/topbackbar"
+            android:layout_marginTop="@dimen/topbackbarmargintop"
+            android:background="@drawable/navi_icon_location2x"
+            android:clickable="true" />
+
+        <!--
+             <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/navi_icon_back2x" />
+        -->
+    </LinearLayout>
+
+</RelativeLayout>

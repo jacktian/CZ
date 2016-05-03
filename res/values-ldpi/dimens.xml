@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- ldpi -->
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+    <!-- gl_activity中刷新按钮距离 -->
+    <dimen name="margin">260dp</dimen>
+    <!-- gl_activity中忙、闲距离 -->
+    <dimen name="margin1">265dp</dimen>
+
+</resources>

@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@drawable/gardenguidecell_bg2x" >
+
+    <Button
+        android:id="@+id/image1"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="125dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/convenience_bus2x"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_marginLeft="130dip"
+        android:text="@string/bus"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/image2"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="125dip"
+        android:layout_marginTop="125dip"
+        android:background="@drawable/convenience_food2x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image2"
+        android:layout_marginLeft="130dip"
+        android:text="@string/delicious"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/image3"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="125dip"
+        android:background="@drawable/convenience_signpot2x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image3"
+        android:layout_marginLeft="15dip"
+        android:text="@string/travel"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/image4"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="230dip"
+        android:layout_marginTop="125dip"
+        android:background="@drawable/convenience_hotel2x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image3"
+        android:layout_marginLeft="235dip"
+        android:text="@string/hotel"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/image5"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="125dip"
+        android:layout_marginTop="230dip"
+        android:background="@drawable/convenience_bank2x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image5"
+        android:layout_marginLeft="130dip"
+        android:text="@string/bank"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>

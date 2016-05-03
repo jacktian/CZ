@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="360dp"
+    android:background="@drawable/gardenguidecell_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/delete" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:text="分享" />
+
+</LinearLayout>

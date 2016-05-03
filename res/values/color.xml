@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="dark">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="trans">#00000000</color>
+    <color name="yell">#FFD700</color>
+    <color name="appcolor">#5AB7E5</color>
+    <color name="black">#000000</color>
+    <color name="text_gray">#6C6C6C</color>
+    <color name="page_gray">#8A8A8A</color>
+    <!-- <color name="listview_gray">#ECEDEF</color> -->
+    <color name="titlebtn_gray">#464646</color>
+    <color name="listview_gray">#F8F8F8</color>
+    <color name="blue">#0066cc</color>
+    <color name="photo_gray">#545454</color>
+    <color name="transparent">#00000000</color>
+    <color name="weibo_bg">#F8F8F8</color>
+    <color name="weibo_detail_bg">#F4F4F4</color>
+    <color name="weibo_btn_select">#FF4E5762</color>
+    <color name="weibo_btn_normal">#A4A4A4</color>
+    <color name="tab_sub_bg">#0066cc</color>
+    <color name="photolist">#AF000000</color>
+    <color name="dackblue">#0F3357</color>
+    <color name="lightblue">#04B9EE</color>
+    <color name="lightgray">#AF000000</color>
+    <color name="bg_gray_1">#909090</color>
+    <color name="dackgray">#505050</color>
+    <color name="gray_1">#E9E9E9</color>
+    <color name="business_purple">#B88FBB</color>
+    <color name="business_darkred">#C07F97</color>
+    <color name="business_oranger">#DD9E75</color>
+    <color name="business_navy">#113356</color>
+ <!-- 藏青色 -->
+
+    <color name="listview_cacheColorHint">#c9c9c9</color>
+    <color name="setting_title_bg">#D4D4D4</color>
+
+    <!-- zxing color -->
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+</resources>
