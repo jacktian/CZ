@@ -15,7 +15,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
-import android.widget.Toast;
 import net.tsz.afinal.FinalBitmap;
 
 public class HomeDetailActivity extends Activity {

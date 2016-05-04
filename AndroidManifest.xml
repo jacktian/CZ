@@ -2,7 +2,7 @@
     package="com.android.user"
     android:installLocation="auto"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="2.0" >
 
     <uses-permission android:name="android.permission.WRITE_SETTINGS" >
     </uses-permission>
