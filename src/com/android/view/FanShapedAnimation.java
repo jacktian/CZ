@@ -8,34 +8,26 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.RotateAnimation;
 
 public class FanShapedAnimation {
-	// �붯��
 	public static void startAnimationIN(ViewGroup viewGroup, int duration) {
 		for (int i = 0; i < viewGroup.getChildCount(); i++) {
-			viewGroup.getChildAt(i).setVisibility(View.VISIBLE);// ������ʾ
-			viewGroup.getChildAt(i).setFocusable(true);// ��ý���
-			viewGroup.getChildAt(i).setClickable(true);// ���Ե��
+			viewGroup.getChildAt(i).setVisibility(View.VISIBLE);
+			viewGroup.getChildAt(i).setFocusable(true);
+			viewGroup.getChildAt(i).setClickable(true);
 		}
 
 		Animation animation;
-		/**
-		 * ��ת���� RotateAnimation(fromDegrees, toDegrees, pivotXType,
-		 * pivotXValue, pivotYType, pivotYValue) fromDegrees ��ʼ��ת�Ƕ� toDegrees
-		 * ��ת���ĽǶ� pivotXType X�� ������ pivotXValue x�� ��ת�Ĳο��� pivotYType
-		 * Y�� ������ pivotYValue Y�� ��ת�Ĳο���
-		 */
 		animation = new RotateAnimation(-180, 0, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 1.0f);
-		animation.setFillAfter(true);// ͣ���ڶ�������λ��
+		animation.setFillAfter(true);
 		animation.setDuration(duration);
 
 		viewGroup.startAnimation(animation);
 
 	}
 
-	// ������
 	public static void startAnimationOUT(final ViewGroup viewGroup, int duration, int startOffSet) {
 		Animation animation;
 		animation = new RotateAnimation(0, -180, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 1.0f);
-		animation.setFillAfter(true);// ͣ���ڶ�������λ��
+		animation.setFillAfter(true);
 		animation.setDuration(duration);
 		animation.setStartOffset(startOffSet);
 		animation.setAnimationListener(new AnimationListener() {

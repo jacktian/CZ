@@ -41,23 +41,17 @@ public class CustomAnimDrawable extends AnimationDrawable {
 		Log.v(TAG, "------CustomAnimDrawable------>start");
 	}
 
-	/**
-	 * ѭ����� ������״̬
-	 */
 	class AnimEndListenerRunnable implements Runnable {
 		@Override
 		public void run() {
-			// �����ѿ�ʼ
 			if (!mStarted) {
 				return;
 			}
-			// δֹͣ�������
 			if (!isEnd()) {
 				mHandler.postDelayed(mEndRunnable, 1000);
 				return;
 			}
 			Log.v(TAG, "----------->over");
-			// �����ѽ���
 			if (mListener != null) {
 				mStarted = false;
 				mListener.onAnimationEnd(mSelf);
@@ -65,20 +59,12 @@ public class CustomAnimDrawable extends AnimationDrawable {
 		}
 	}
 
-	/**
-	 * �ж϶����Ƿ���� ���÷������
-	 * 
-	 * @return
-	 */
 	private boolean isEnd() {
 		Class<AnimationDrawable> animClass = AnimationDrawable.class;
 		try {
-			// ����Java���䷽���ж��Ƿ����
-			// ���˽�з��� ����
 			// Method method =
 			// animClass.getDeclaredMethod("nextFrame",boolean.class);
 
-			// ������˽�б���
 			Field field = animClass.getDeclaredField("mCurFrame");
 			field.setAccessible(true);
 

@@ -53,8 +53,7 @@ public class SystemInit extends Activity {
 		// dots.add(findViewById(R.id.v_dot4));
 
 		viewPager = (ViewPager) findViewById(R.id.vp);
-		viewPager.setAdapter(new MyAdapter());// �������ViewPagerҳ���������
-		// ����һ������������ViewPager�е�ҳ��ı�ʱ����
+		viewPager.setAdapter(new MyAdapter());
 		viewPager.setOnPageChangeListener(new MyPageChangeListener());
 	}
 
@@ -81,7 +80,6 @@ public class SystemInit extends Activity {
 	protected void onStart() {
 		// scheduledExecutorService =
 		// Executors.newSingleThreadScheduledExecutor();
-		// ��Activity��ʾ������ÿ�������л�һ��ͼƬ��ʾ
 		// scheduledExecutorService.scheduleAtFixedRate(new ScrollTask(), 1, 2,
 		// TimeUnit.SECONDS);
 		super.onStart();
@@ -89,7 +87,6 @@ public class SystemInit extends Activity {
 
 	@Override
 	protected void onStop() {
-		// ��Activity���ɼ��ʱ��ֹͣ�л�
 		// scheduledExecutorService.shutdown();
 		super.onStop();
 	}

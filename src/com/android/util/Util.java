@@ -39,11 +39,6 @@ public class Util {
 		}
 	}
 
-	/**
-	 * �ж�����
-	 * 
-	 * @return
-	 */
 	public static boolean checkNet(Context context) {
 		if (hasConnectedNetwork(context)) {
 			return true;
@@ -51,12 +46,6 @@ public class Util {
 		return false;
 	}
 
-	/**
-	 * �Ƿ�����l��
-	 * 
-	 * @param context
-	 * @return
-	 */
 	public static boolean hasConnectedNetwork(Context context) {
 		ConnectivityManager connectivity = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
 		if (connectivity == null) {
@@ -65,12 +54,6 @@ public class Util {
 		return connectivity.getActiveNetworkInfo() != null;
 	}
 
-	/**
-	 * ��ʾtoast����ʱ�䣩
-	 * 
-	 * @param context
-	 * @param s
-	 */
 	public static void showToastLong(Context context, String s) {
 		Toast.makeText(context, s, Toast.LENGTH_LONG).show();
 	}

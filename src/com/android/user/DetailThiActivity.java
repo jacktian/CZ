@@ -46,14 +46,13 @@ public class DetailThiActivity extends Activity {
 		dots.add(findViewById(R.id.v_dot4));
 
 		viewPager = (ViewPager) findViewById(R.id.vp);
-		viewPager.setAdapter(new MyAdapter());// �������ViewPagerҳ���������
-		// ����һ������������ViewPager�е�ҳ��ı�ʱ����
+		viewPager.setAdapter(new MyAdapter());
 		viewPager.setOnPageChangeListener(new MyPageChangeListener());
 	}
 
 	private Handler handler = new Handler() {
 		public void handleMessage(android.os.Message msg) {
-			viewPager.setCurrentItem(currentItem);// �л���ǰ��ʾ��ͼƬ
+			viewPager.setCurrentItem(currentItem);
 		};
 	};
 
@@ -63,7 +62,7 @@ public class DetailThiActivity extends Activity {
 			synchronized (viewPager) {
 				System.out.println("currentItem: " + currentItem);
 				currentItem = (currentItem + 1) % imageViews.size();
-				handler.obtainMessage().sendToTarget(); // ͨ��Handler�л�ͼƬ
+				handler.obtainMessage().sendToTarget(); 
 			}
 		}
 

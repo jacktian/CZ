@@ -53,10 +53,6 @@ final class CameraManager {
 			camera = Camera.open();
 			camera.setPreviewDisplay(holder);
 			camera.setDisplayOrientation(90);
-			/**
-			 * ��androidģ�������ûس��ִ���������Ͽ������ã����������ϲ����ã������պ��ȡ
-			 * ��Ƭ�����
-			 */
 			// Camera.Parameters p =camera.getParameters();
 			// p.setPreviewFormat(PixelFormat.JPEG);
 			// p.setPreviewSize(CameraPreview.ScrrenWidth,

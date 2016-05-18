@@ -236,7 +236,6 @@ public class CameraPreview extends Activity_Base implements SurfaceHolder.Callba
 			case R.id.save:
 				try {
 					byte buf[] = (byte[]) message.obj;
-					// ���ˮӡͼƬ
 					bm = BitmapFactory.decodeByteArray(buf, 0, buf.length);
 					// Bitmap bitmap = ImageUtils.getScaleImage(bm);
 					int res = 0;
@@ -398,8 +397,8 @@ public class CameraPreview extends Activity_Base implements SurfaceHolder.Callba
 
 			cv.drawText(title, w - 400, h - 40, textPaint);
 		}
-		cv.save(Canvas.ALL_SAVE_FLAG);// ����
-		cv.restore();// �洢
+		cv.save(Canvas.ALL_SAVE_FLAG);
+		cv.restore();
 		if (src != null && !src.isRecycled()) {
 			src.recycle();
 		}
@@ -514,9 +513,6 @@ public class CameraPreview extends Activity_Base implements SurfaceHolder.Callba
 	// builder.show();
 	//
 	// public void onError(int error, Camera camera) {
-	// /**
-	// * ý�����������������������£�Ӧ�ó�������ͷ�Camera�����ʵ��һ���µġ�
-	// * */
 	// if(error==android.hardware.Camera.CAMERA_ERROR_SERVER_DIED)
 	// {
 	// Log.d(TAG, "CAMERA_ERROR_SERVER_DIED");
@@ -531,9 +527,6 @@ public class CameraPreview extends Activity_Base implements SurfaceHolder.Callba
 	// builder.setOnCancelListener(new FinishListener(this));
 	// builder.show();
 	// }
-	// /**
-	// * δָ���Ĵ���camerar
-	// * */
 	// else if(error==android.hardware.Camera.CAMERA_ERROR_UNKNOWN)
 	// {
 	// Log.d(TAG, "CAMERA_ERROR_UNKNOWN");

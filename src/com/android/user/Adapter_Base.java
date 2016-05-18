@@ -15,14 +15,6 @@ import com.nostra13.universalimageloader.core.ImageLoader;
  * @author gejian
  *
  */
-/**
-* �� �� �� : PostListAdapter
-* �� �� �ˣ� gejian
-* ��     �ڣ�2013-2-5
-* �� �� �ˣ�gejian
-* ��    �ڣ�2013-2-5
-* ��    ���������������
-*/
 public class Adapter_Base extends BaseAdapter{
 	
 	Context _context;

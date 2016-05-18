@@ -46,8 +46,7 @@ public class DetailOthActivity extends Activity {
 		// dots.add(findViewById(R.id.v_dot4));
 
 		viewPager = (ViewPager) findViewById(R.id.vp);
-		viewPager.setAdapter(new MyAdapter());// �������ViewPagerҳ���������
-		// ����һ������������ViewPager�е�ҳ��ı�ʱ����
+		viewPager.setAdapter(new MyAdapter());
 		viewPager.setOnPageChangeListener(new MyPageChangeListener());
 	}
 

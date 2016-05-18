@@ -10,7 +10,7 @@ import android.widget.ImageView;
 public class OntouchUtil {
 	public static void changeLight(ImageView imageView, int brightness) {
 		ColorMatrix cMatrix = new ColorMatrix();
-		cMatrix.set(new float[] { 1, 0, 0, 0, brightness, 0, 1, 0, 0, brightness, // �ı�����
+		cMatrix.set(new float[] { 1, 0, 0, 0, brightness, 0, 1, 0, 0, brightness, 
 				0, 0, 1, 0, brightness, 0, 0, 0, 1, 0 });
 		imageView.setColorFilter(new ColorMatrixColorFilter(cMatrix));
 	}

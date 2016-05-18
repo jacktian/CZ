@@ -30,21 +30,13 @@ public class ZoomImageView extends ImageView
 	}
 
 	public static final float SCALE_MAX = 4.0f;
-	/**
-	 * ��ʼ��ʱ�����ű������ͼƬ���ߴ�����Ļ����ֵ��С��0
-	 */
+
 	private float initScale = 1.0f;
 
-	/**
-	 * ���ڴ�ž����9��ֵ
-	 */
 	private final float[] matrixValues = new float[9];
 
 	private boolean once = true;
 
-	/**
-	 * ���ŵ����Ƽ��
-	 */
 	private ScaleGestureDetector mScaleGestureDetector = null;
 
 	private final Matrix mScaleMatrix = new Matrix();
@@ -64,22 +56,13 @@ public class ZoomImageView extends ImageView
 		if (getDrawable() == null) {
 			return true;
 		}
-		/**
-		 * ���ŵķ�Χ����
-		 */
 		if ((scale < SCALE_MAX && scaleFactor > 1.0) || (scale > initScale && scaleFactor < 1.0)) {
-			/**
-			 * ���ֵ��Сֵ�ж�
-			 */
 			if (scaleFactor * scale < initScale) {
 				scaleFactor = initScale / scale;
 			}
 			if (scaleFactor * scale > SCALE_MAX) {
 				scaleFactor = SCALE_MAX / scale;
 			}
-			/**
-			 * �������ű���
-			 */
 			mScaleMatrix.postScale(scaleFactor, scaleFactor, detector.getFocusX(), detector.getFocusY());
 			checkBorderAndCenterWhenScale();
 			setImageMatrix(mScaleMatrix);
@@ -112,12 +95,10 @@ public class ZoomImageView extends ImageView
 			int width = getWidth();
 			int height = getHeight();
 
-			// �õ�ͼƬ�Ŀ�͸�
 			int dw = d.getIntrinsicWidth();
 			int dh = d.getIntrinsicHeight();
 			float scale = 1.0f;
 
-			// ���ͼƬ�Ŀ���߸ߴ�����Ļ������������Ļ�Ŀ���߸�
 			if (dw > width && dh < height) {
 				scale = width * 1.0f / dw;
 			}
@@ -129,7 +110,6 @@ public class ZoomImageView extends ImageView
 			}
 
 			initScale = scale;
-			// ͼƬ�ƶ�����Ļ����
 			mScaleMatrix.postTranslate((width - dw) / 2, (height - dh) / 2);
 			mScaleMatrix.postScale(scale, scale, width / 2, height / 2);
 			setImageMatrix(mScaleMatrix);
@@ -143,9 +123,7 @@ public class ZoomImageView extends ImageView
 		// TODO Auto-generated method stub
 		mScaleGestureDetector.onTouchEvent(event);
 		float x = 0, y = 0;
-		// �õ�������ĸ���
 		final int pointerCount = event.getPointerCount();
-		// �õ�����������x��y��ֵ
 		for (int i = 0; i < pointerCount; i++) {
 			x += event.getX(i);
 			y += event.getY(i);
@@ -154,9 +132,6 @@ public class ZoomImageView extends ImageView
 		x = x / pointerCount;
 		y = y / pointerCount;
 
-		/**
-		 * ÿ�������㷢��仯ʱ������mLasX , mLastY
-		 */
 		if (pointerCount != lastPointerCount) {
 			isCanDrag = false;
 			mLastX = x;
@@ -177,12 +152,10 @@ public class ZoomImageView extends ImageView
 				RectF rectF = getMatrixRectF();
 				if (getDrawable() != null) {
 					isCheckLeftAndRight = isCheckTopAndBottom = true;
-					// �����С����Ļ��ȣ����ֹ�����ƶ�
 					if (rectF.width() < getWidth()) {
 						dx = 0;
 						isCheckLeftAndRight = false;
 					}
-					// ���߶�С����Ļ�߶ȣ����ֹ�����ƶ�
 					if (rectF.height() < getHeight()) {
 						dy = 0;
 						isCheckTopAndBottom = false;
@@ -205,16 +178,12 @@ public class ZoomImageView extends ImageView
 		return true;
 	}
 
-	/**
-	 * �ƶ�ʱ�����б߽��жϣ���Ҫ�жϿ��ߴ�����Ļ��
-	 */
 	private void checkMatrixBounds() {
 		RectF rect = getMatrixRectF();
 
 		float deltaX = 0, deltaY = 0;
 		final float viewWidth = getWidth();
 		final float viewHeight = getHeight();
-		// �ж��ƶ������ź�ͼƬ��ʾ�Ƿ񳬳���Ļ�߽�
 		if (rect.top > 0 && isCheckTopAndBottom) {
 			deltaY = -rect.top;
 		}
@@ -230,22 +199,10 @@ public class ZoomImageView extends ImageView
 		mScaleMatrix.postTranslate(deltaX, deltaY);
 	}
 
-	/**
-	 * �Ƿ����ƶ���Ϊ
-	 * 
-	 * @param dx
-	 * @param dy
-	 * @return
-	 */
 	private boolean isCanDrag(float dx, float dy) {
 		return Math.sqrt((dx * dx) + (dy * dy)) >= mTouchSlop;
 	}
 
-	/**
-	 * ��õ�ǰ�����ű���
-	 * 
-	 * @return
-	 */
 	public final float getScale() {
 		mScaleMatrix.getValues(matrixValues);
 		return matrixValues[Matrix.MSCALE_X];
@@ -264,9 +221,6 @@ public class ZoomImageView extends ImageView
 		getViewTreeObserver().removeGlobalOnLayoutListener(this);
 	}
 
-	/**
-	 * ������ʱ������ͼƬ��ʾ��Χ�Ŀ���
-	 */
 	private void checkBorderAndCenterWhenScale() {
 		RectF rect = getMatrixRectF();
 		float deltaX = 0;
@@ -274,7 +228,6 @@ public class ZoomImageView extends ImageView
 		int width = getWidth();
 		int height = getHeight();
 
-		// �����ߴ�����Ļ������Ʒ�Χ
 		if (rect.width() >= width) {
 			if (rect.left > 0) {
 				deltaX = -rect.left;
@@ -292,7 +245,6 @@ public class ZoomImageView extends ImageView
 			}
 		}
 
-		// ������С����Ļ�����������
 		if (rect.width() < width) {
 			deltaX = width * 0.5f - rect.right + 0.5f * rect.width();
 		}
@@ -316,18 +268,4 @@ public class ZoomImageView extends ImageView
 
 		return rect;
 	}
-	// ������ViewPager�ĳ�ͻ
-	// switch (event.getAction())
-	// {
-	// case MotionEvent.ACTION_DOWN:
-	// if (rectF.width() > getWidth() || rectF.height() > getHeight())
-	// {
-	// getParent().requestDisallowInterceptTouchEvent(true);
-	// }
-	// break;
-	// case MotionEvent.ACTION_MOVE:
-	// if (rectF.width() > getWidth() || rectF.height() > getHeight())
-	// {
-	// getParent().requestDisallowInterceptTouchEvent(true);
-	// }
 }
