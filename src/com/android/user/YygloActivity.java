@@ -50,7 +50,7 @@ public class YygloActivity extends Activity {
 	private String content = "share content";
 	private String lat = "90.00", lon = "90.00";
 
-	String path = "1 室内项目路线 \n海底精灵城 ⇒ 小摩尔大冒险 ⇒ 游戏要塞 ⇒ 冰剑国度 ⇒ 大话嬉戏 ⇒ 天幕幻想 ⇒ 天际骇客 ⇒ 魔神天途 ⇒ 梦幻擎天 \n2 亲子游项目专用路线 \n海底精灵城 ⇒ 小摩尔大冒险 ⇒ 空中大巡逻 ⇒ 魔法精灵 ⇒ 飞旋骑士 ⇒ 游戏要塞 ⇒ 冰剑国度 ⇒ 天堂之舵 ⇒ 龙行天下 ";
+	String path = "1 室内项目路线 \n海底精灵城 ⇒ 小摩尔大冒险 ⇒ 游戏要塞 ⇒ 冰剑国度 ⇒ 大话嬉戏 ⇒ 天幕幻想 ⇒ 天际骇客 ⇒  梦幻擎天 \n2 亲子游项目专用路线 \n海底精灵城 ⇒ 小摩尔大冒险 ⇒ 空中大巡逻 ⇒ 魔法精灵 ⇒ 飞旋骑士 ⇒ 游戏要塞 ⇒ 冰剑国度 ⇒ 天堂之舵 ⇒ 龙行天下 ";
 	UMSocialService mController = UMServiceFactory.getUMSocialService("com.umeng.share", RequestType.SOCIAL);
 	String appID = "wxf68fd078c1d9f53a";
 	String contentUrl = "http://www.ccjoy.cn/joylandweb/main.html";
