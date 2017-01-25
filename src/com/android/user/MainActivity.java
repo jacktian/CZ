@@ -22,12 +22,15 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.android.common.HomeNews;
 import com.android.common.IntentAction;
 import com.android.net.HomeNewsService;
 import com.android.util.Util;
 import com.android.util.WigetUtil;
 import com.android.view.BottomBar;
+import com.google.gson.Gson;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -219,121 +222,137 @@ public class MainActivity extends Activity {
 		// });
 
 		// System.out.println(jsonResult);
-
+		
 		new Thread(new Runnable() {
 			public void run() {
 				// String
 				// weatherUrl="http://www.weather.com.cn/data/cityinfo/101191101.html";
 				// String weatherJson=queryStringForGet(weatherUrl);
 
-				String httpUrl = "http://apis.baidu.com/heweather/weather/free";
-				String httpArg = "city=changzhou";
+//				String httpUrl = "http://apis.baidu.com/heweather/weather/free";
+//				String httpArg = "city=changzhou";
+				
+				String httpUrl = "http://api.map.baidu.com/telematics/v3/weather";
+				String httpArg = "location=%E5%B8%B8%E5%B7%9E&output=json&ak=FK9mkfdQsloEngodbFl4FeY3";
+				
 				String weatherJson = request(httpUrl, httpArg);
-				JsonReader reader = new JsonReader(new StringReader(weatherJson));
-				try {
-					reader.beginObject();
-					while (reader.hasNext()) {
-						String name = reader.nextName();
-						if (name.equals("HeWeather data service 3.0") && reader.peek() == JsonToken.BEGIN_ARRAY) {
-							reader.beginArray();
-							while (reader.hasNext()) {
-								reader.beginObject();
-								while (reader.hasNext()) {
-
-									String name1 = reader.nextName();
-									if (name1.equals("daily_forecast") && reader.peek() == JsonToken.BEGIN_ARRAY) {
-										reader.beginArray();
-										while (reader.hasNext()) {
-											reader.beginObject();
-											while (reader.hasNext()) {
-												String name2 = reader.nextName();
-												if (name2.equals("cond") && reader.peek() == JsonToken.BEGIN_OBJECT) {
-													reader.beginObject();
-													while (reader.hasNext()) {
-														String name3 = reader.nextName();
-														if (name3.equals("txt_d")) {
-
-															if (istoday) {
-
-																weatherString = reader.nextString();
-															} else {
-																reader.nextString();
-															}
-
-														} else {
-															reader.skipValue();
-														}
-													}
-													reader.endObject();
-												} else if (name2.equals("tmp")
-														&& reader.peek() == JsonToken.BEGIN_OBJECT) {
-													reader.beginObject();
-													while (reader.hasNext()) {
-														String name4 = reader.nextName();
-														if (name4.equals("max")) {
-
-															if (istoday) {
-
-																tempsecond = reader.nextString();
-															} else {
-																reader.nextString();
-															}
-
-														} else if (name4.equals("min")) {
-
-															if (istoday) {
-
-																tempfirst = reader.nextString();
-															} else {
-																reader.nextString();
-															}
-
-														} else {
-															reader.skipValue();
-														}
-
-													}
-
-													reader.endObject();
-												} else {
-													reader.skipValue();
-												}
-
-											}
-
-											reader.endObject();
-											istoday = false;
-
-										}
-										reader.endArray();
-									} else {
-										reader.skipValue();
-									}
-								}
-								reader.endObject();
-							}
-							reader.endArray();
-						} else {
-							reader.skipValue();
-						}
-
-					}
-					reader.endObject();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} finally {
-					try {
-						reader.close();
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-				}
+				System.out.println("------>"+weatherJson);
+				
+				JSONObject weatherData=JSONObject.parseObject(weatherJson);
+				if("success".equals(weatherData.getString("status"))){
+				JSONArray forecastArray=weatherData.getJSONArray("results").getJSONObject(0).getJSONArray("weather_data");
+				JSONObject todayWeather=forecastArray.getJSONObject(0);
+				tempfirst=todayWeather.getString("temperature");
+				tempsecond="";
+				weatherString=todayWeather.getString("weather");
 
 				Message message = new Message();
 				message.what = 1;
 				thandler.sendMessage(message);
+				}
+				
+//				JsonReader reader = new JsonReader(new StringReader(weatherJson));
+//				try {
+//					reader.beginObject();
+//					while (reader.hasNext()) {
+//						String name = reader.nextName();
+//						if (name.equals("HeWeather data service 3.0") && reader.peek() == JsonToken.BEGIN_ARRAY) {
+//							reader.beginArray();
+//							while (reader.hasNext()) {
+//								reader.beginObject();
+//								while (reader.hasNext()) {
+//
+//									String name1 = reader.nextName();
+//									if (name1.equals("daily_forecast") && reader.peek() == JsonToken.BEGIN_ARRAY) {
+//										reader.beginArray();
+//										while (reader.hasNext()) {
+//											reader.beginObject();
+//											while (reader.hasNext()) {
+//												String name2 = reader.nextName();
+//												if (name2.equals("cond") && reader.peek() == JsonToken.BEGIN_OBJECT) {
+//													reader.beginObject();
+//													while (reader.hasNext()) {
+//														String name3 = reader.nextName();
+//														if (name3.equals("txt_d")) {
+//
+//															if (istoday) {
+//
+//																weatherString = reader.nextString();
+//															} else {
+//																reader.nextString();
+//															}
+//
+//														} else {
+//															reader.skipValue();
+//														}
+//													}
+//													reader.endObject();
+//												} else if (name2.equals("tmp")
+//														&& reader.peek() == JsonToken.BEGIN_OBJECT) {
+//													reader.beginObject();
+//													while (reader.hasNext()) {
+//														String name4 = reader.nextName();
+//														if (name4.equals("max")) {
+//
+//															if (istoday) {
+//
+//																tempsecond = reader.nextString();
+//															} else {
+//																reader.nextString();
+//															}
+//
+//														} else if (name4.equals("min")) {
+//
+//															if (istoday) {
+//
+//																tempfirst = reader.nextString();
+//															} else {
+//																reader.nextString();
+//															}
+//
+//														} else {
+//															reader.skipValue();
+//														}
+//
+//													}
+//
+//													reader.endObject();
+//												} else {
+//													reader.skipValue();
+//												}
+//
+//											}
+//
+//											reader.endObject();
+//											istoday = false;
+//
+//										}
+//										reader.endArray();
+//									} else {
+//										reader.skipValue();
+//									}
+//								}
+//								reader.endObject();
+//							}
+//							reader.endArray();
+//						} else {
+//							reader.skipValue();
+//						}
+//
+//					}
+//					reader.endObject();
+//				} catch (IOException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				} finally {
+//					try {
+//						reader.close();
+//					} catch (IOException e) {
+//						// TODO Auto-generated catch block
+//						e.printStackTrace();
+//					}
+//				}
+
 
 			}
 		}).start();
@@ -357,7 +376,7 @@ public class MainActivity extends Activity {
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("GET");
 			// 填入apikey到HTTP header
-			connection.setRequestProperty("apikey", "6ea3c94475761a73e5c6d1c4a605a4ce");
+//			connection.setRequestProperty("apikey", "6ea3c94475761a73e5c6d1c4a605a4ce");
 			connection.connect();
 			InputStream is = connection.getInputStream();
 			reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
@@ -383,14 +402,14 @@ public class MainActivity extends Activity {
 
 				try {
 
-					String str = tempfirst + "°" + "~" + tempsecond + "°";
+					String str = tempfirst ;
 					temp.setText(str);
 					String wea = weatherString;
-					if (wea.equals("小雨")) {
+					if (wea.equals("小雨")||wea.equals("大雨")||wea.equals("雨")) {
 						weather.setBackgroundResource(R.drawable.weather_rainy);
 					} else if (wea.equals("晴")) {
 						weather.setBackgroundResource(R.drawable.weather_sunny);
-					} else if (wea.equals("雪")) {
+					} else if (wea.equals("大雪")||wea.equals("小雪")||wea.equals("雪")) {
 						weather.setBackgroundResource(R.drawable.weather_snow);
 					} else if (wea.equals("阴")) {
 						weather.setBackgroundResource(R.drawable.weather_overcast);
